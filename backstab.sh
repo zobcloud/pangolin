@@ -10,7 +10,7 @@ scp -P1569 backup@10.10.1.1:/cf/conf/config.xml /home/zobcloud
 # function to rename the backed up file
 renameBackup
 # backup command for the wiki database within mysql
-mysqldump -u root -pMosey@5641 my_wiki | gzip -9 > /home/zobcloud/NATCAwikiBackup.sql.gz
+mysqldump -u root -pPASSWORD my_wiki | gzip -9 > /home/zobcloud/NATCAwikiBackup.sql.gz
 # function to rename the backed up database
 renameWikiBackup
 # if the pfsense file is present, then use dropbox-uploader.sh to transfer to dropbox
